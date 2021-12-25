@@ -677,10 +677,10 @@ body {
         right: 1rem;
         top: 7.5rem;
         z-index: 3;
+        display: none;
     }
     .composition__photo--p3 {
-        left: 7rem;
-        top: 18rem;
-        z-index: 2;
+        left: 5rem;
+        top: 14rem;
     }
 }
