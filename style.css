@@ -109,7 +109,7 @@ body {
 .about-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     column-gap: 25px;
     row-gap: 15px;
 }
@@ -269,6 +269,7 @@ body {
     background-color: #ffffff;
     box-shadow: 7px 7px 0px rgba(191, 191, 191, 0.4);
     text-align: center;
+    width: 296px;
 }
 
 .item-main {
@@ -320,7 +321,7 @@ body {
 
 .muskaan {
     background: url("muskaan.jpg");
-    background-position: center;
+    background-position: 0% 30%;
 }
 
 .love {
@@ -334,12 +335,12 @@ body {
 }
 
 .tanvi {
-    background: url("tanvi.jpg");
+    background: url("tanvi2.jpeg");
     background-position: 100% 0%;
 }
 
 .manish {
-    background: url("manish.png");
+    background: url("manish2.png");
     background-position: 0% 8%;
 }
 
@@ -587,4 +588,79 @@ body {
     margin: 10px auto;
     width: 7%;
     border-bottom: 7px dotted rgb(172, 167, 167);
+}
+
+
+@media screen and (max-width: 600px) {
+    .about-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+    .about-item1 {
+        padding: 0px;
+        margin: 22px auto;
+    }
+    .compo1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {  
+    .service-text {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0%;
+    }
+    .s-item {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .item-s {
+        margin-bottom: 32px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-2 {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 0px;
+        margin-top: 36px;
+    }
+    .item-2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .item-3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .item-4 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .team-ill {
+        width: 250px;
+        height: auto;
+    }
 }

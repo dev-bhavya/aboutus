@@ -7,6 +7,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body {
+    background-color: #eef8f9;
+}
 
 img {
     width: 250px;
@@ -398,6 +401,7 @@ body {
     .container-2 {
         grid-template-columns: repeat(1, 1fr);
         padding: 0px 0px;
+        margin-top: 36px;
     }
 
     .item-2 {
