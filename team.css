@@ -7,9 +7,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body {
-    background-color: #eef8f9;
-}
 
 img {
     width: 250px;
@@ -432,6 +429,7 @@ body {
         grid-column-end: 1;
     }
 }
+
 
 body {
     background-color: #eef8f9;
