@@ -603,6 +603,9 @@ body {
     .compo1 {
         display: none;
     }
+    .compo2 {
+
+    }
 }
 
 @media screen and (max-width: 600px) {  
@@ -662,5 +665,22 @@ body {
     .team-ill {
         width: 250px;
         height: auto;
+    }
+}
+
+@media screen  and (max-width: 600px) {
+    .composition__photo--p1 {
+        left: 0rem;
+        top: 0rem;
+    }
+    .composition__photo--p2 {
+        right: 1rem;
+        top: 7.5rem;
+        z-index: 3;
+    }
+    .composition__photo--p3 {
+        left: 7rem;
+        top: 18rem;
+        z-index: 2;
     }
 }
