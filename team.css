@@ -12,7 +12,9 @@ img {
     width: 250px;
 }
 
-li, a, button {
+li,
+a,
+button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -24,7 +26,7 @@ header {
     display: flex;
     align-items: center;
     padding: 10px 1%;
-    background: linear-gradient(316deg,#2a2323  60%, #50d8d7 130%);
+    background: linear-gradient(316deg, #2a2323 60%, #50d8d7 130%);
 }
 
 .logo {
@@ -88,6 +90,7 @@ body {
     display: inline-block;
     width: 60%;
 }
+
 .page-head p {
     font-weight: 500;
     font-size: 20px;
@@ -118,10 +121,10 @@ body {
     margin-bottom: 45px;
 }
 
-.container-2{
+.container-2 {
     display: grid;
     /* background-color: rgba(65, 223, 223, 0.514); */
-    
+
 
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -133,10 +136,10 @@ body {
     align-items: center;
 }
 
-.container-3{
+.container-3 {
     display: grid;
     /* background-color: rgba(65, 223, 223, 0.514); */
-    
+
 
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -156,7 +159,7 @@ body {
     background-color: #ffffff;
     box-shadow: 7px 7px 0px rgba(191, 191, 191, 0.4);
     text-align: center;
-    
+
     width: 296px;
 }
 
@@ -218,7 +221,7 @@ body {
 }
 
 
-.hari{
+.hari {
     background: url("sir.jpg");
     background-position: 0% 40%;
 }
@@ -257,8 +260,6 @@ body {
     background: url("bhavya2.jpg");
     background-position: 0% 60%;
 }
-
-
 
 .mohit {
     background: url("mohit.jpg");
@@ -354,7 +355,7 @@ body {
 .paras {
     background: url("paras2.jpeg");
     background-position: 50% 25%;
-    
+
     background-repeat: no-repeat;
 }
 
@@ -398,6 +399,10 @@ body {
         grid-template-columns: repeat(1, 1fr);
         padding: 0px;
     }
+    .item-main {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -411,10 +416,12 @@ body {
         grid-column-start: 1;
         grid-column-end: 2;
     }
+
     .item-3 {
         grid-column-start: 1;
         grid-column-end: 2;
     }
+
     .item-4 {
         grid-column-start: 1;
         grid-column-end: 2;
@@ -426,10 +433,12 @@ body {
         grid-template-columns: repeat(1, 1fr);
         padding: 0px;
     }
+
     .item-one {
         grid-column-start: 1;
         grid-column-end: 1;
     }
+
     .item-two {
         grid-column-start: 1;
         grid-column-end: 1;
