@@ -81,7 +81,7 @@ body {
 }
 
 .page-head {
-    margin: 40px auto 20px;
+    margin: 80px auto 20px;
     text-align: center;
     font-family: 'Lato';
 }
@@ -218,8 +218,9 @@ body {
 }
 
 .ill1 {
-    height: 200px;
-    width: 300px;
+    width: 70%;
+    max-width: 300px;
+    height: auto;
 }
 
 
@@ -451,7 +452,6 @@ body {
 
 
 .services-container {
-    padding: 25px 40px;
     display: grid;
 
     grid-template-columns: repeat(4, 1fr);
@@ -460,7 +460,6 @@ body {
 }
 
 .item-s {
-    height: 250px;
     background-color: rgba(227, 227, 227, 0.6);
     padding: 40px 35px;
     text-align: center;
@@ -591,7 +590,44 @@ body {
 }
 
 
-@media screen and (max-width: 600px) {
+
+
+/* GOOGLE FONTS ICONS */
+
+/* ICONS-SIZE */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* ICON-COLOR */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgb(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* ICONS-SIZE */
+.material-icons-outlined.md-18 { font-size: 18px; }
+.material-icons-outlined.md-24 { font-size: 24px; }
+.material-icons-outlined.md-36 { font-size: 36px; }
+.material-icons-outlined.md-48 { font-size: 48px; }
+.material-icons-outlined.md-60 { font-size: 60px; }
+
+/* ICON-COLOR */
+.material-icons-outlined.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons-outlined.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons-outlined.md-light { color: rgb(255, 255, 255, 1); }
+.material-icons-outlined.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
     .about-container {
         grid-template-columns: repeat(1, 1fr);
         padding: 0;
@@ -605,14 +641,32 @@ body {
     .compo1 {
         display: none;
     }
+    .compo2 {
+        height: 200px;
+    }
+    .about-illustration-2 {
+        height: 200px;
+    }
+    .composition__photo--p1 {
+        position: static;
+        margin-bottom: 10px;
+    }
 
-    .compo2 {}
+    .composition__photo--p2 {
+        display: none;
+    }
+
+    .composition__photo--p3 {
+        position: static;
+        display: none;
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 910px) {
     .service-text {
         grid-template-columns: repeat(1, 1fr);
         padding: 0%;
+        row-gap: 0px;
     }
 
     .s-item {
@@ -621,9 +675,26 @@ body {
     }
 }
 
+@media screen and (max-width: 1400px) {
+    .service-text {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item-s {
+        margin-bottom: 32px;
+    }
+}
 
 @media screen and (max-width: 600px) {
     .services-container {
+        width: 70%;
+        margin: auto;
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -636,15 +707,45 @@ body {
 
 
 
+@media screen and (max-width: 1400px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 16px;
+    }
+    .container-2 {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 45px;
+        padding: 0px 0px;
+        margin-top: 36px;
+    }
 
-@media screen and (max-width: 600px) {
+    .item-2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .item-3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .item-4 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 676px) {
     .container {
         grid-template-columns: repeat(1, 1fr);
         padding: 0px;
     }
-}
-
-@media screen and (max-width: 600px) {
     .container-2 {
         grid-template-columns: repeat(1, 1fr);
         padding: 0px 0px;
@@ -667,28 +768,15 @@ body {
     }
 }
 
-@media screen and (max-width: 600px) {
+
+
+
+
+
+
+@media screen and (max-width: 1440px) {
     .team-ill {
         width: 250px;
         height: auto;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .composition__photo--p1 {
-        left: 0rem;
-        top: 0rem;
-    }
-
-    .composition__photo--p2 {
-        right: 1rem;
-        top: 7.5rem;
-        z-index: 3;
-        display: none;
-    }
-
-    .composition__photo--p3 {
-        left: 5rem;
-        top: 14rem;
     }
 }
